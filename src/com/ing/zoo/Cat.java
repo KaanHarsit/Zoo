@@ -2,32 +2,26 @@ package com.ing.zoo;
 
 import java.util.Random;
 
-public class Pig extends Dier implements Carnivor,Herbivor,canDoTrick  {
+public class Cat extends Dier implements Carnivor, canDoTrick  {
 
+    public String name;
     public String helloText;
     public String eatText;
     public String trick;
 
-    public Pig(String name) {
+    public Cat(String name) {
         super(name);
-
     }
 
     public void sayHello()
     {
-        helloText = "oinkoink";
+        helloText = "miauw miauw";
         System.out.println(helloText);
-    }
-
-    public void eatLeaves()
-    {
-        eatText = "munch munch oink";
-        System.out.println(eatText);
     }
 
     public void eatMeat()
     {
-        eatText = "nomnomnom oink thx";
+        eatText = "njomnjomnjom njom njom thx grr";
         System.out.println(eatText);
     }
 
@@ -37,14 +31,13 @@ public class Pig extends Dier implements Carnivor,Herbivor,canDoTrick  {
         int rnd = random.nextInt(2);
         if(rnd == 0)
         {
-            trick = "rolls in the mud";
+            trick = "makes a salto";
         }
         else
         {
-            trick = "runs in circles";
+            trick = "stands on its feet";
         }
         System.out.println(trick);
     }
-
 
 }
